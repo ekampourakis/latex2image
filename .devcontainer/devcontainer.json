@@ -1,0 +1,26 @@
+{
+  "name": "LaTeX2Image Environment",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "latex2image",
+  "workspaceFolder": "/workspaces/latex2image",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "james-yu.latex-workshop",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/home/latexuser/venv/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.provider": "autopep8",
+        "editor.formatOnSave": true
+      }
+    }
+  },
+  "forwardPorts": [8000],
+  "postCreateCommand": "echo 'LaTeX environment ready!'",
+  "remoteUser": "latexuser"
+}
