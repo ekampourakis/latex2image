@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  latex2image:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: latex2image-container
+    volumes:
+      - ..:/workspaces/latex2image:cached
+    command: sleep infinity
+    networks:
+      - latex2image-network
+
+networks:
+  latex2image-network:
+    name: latex2image-network
+    driver: bridge
+
+volumes:
+  latex2image-data:
+    name: latex2image-data

@@ -1,0 +1,64 @@
+{
+  "equations": [
+    {
+      "id": "3.2.1_eq1",
+      "latex": "m \\frac{d^2 \\mathbf{r}_i}{dt^2} = \\mathbf{F}_i^{\\text{total}} = \\mathbf{F}_i^{\\text{spring}} + \\mathbf{F}_i^{\\text{damping}} + \\mathbf{F}_i^{\\text{gravity}}",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.1_eq2",
+      "latex": "m = \\frac{W}{N_x \\cdot N_y}",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.1_eq3",
+      "latex": "\\mathbf{r}(t+\\Delta t) = \\mathbf{r}(t) + \\bigl(\\mathbf{r}(t)-\\mathbf{r}(t-\\Delta t)\\bigr) \\cdot D + \\frac{\\mathbf{F}(t)}{m}\\,\\Delta t^2",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.2.1_eq1",
+      "latex": "\\Delta \\mathbf{r} = \\left(1 - \\frac{L_0}{L}\\right) \\cdot C \\cdot (\\mathbf{r}_1 - \\mathbf{r}_2)",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.2.1_eq2",
+      "latex": "\\frac{L}{L_0} > \\lambda",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.2.2_eq1",
+      "latex": "\\text{def} = \\|\\mathbf{r}_1 - \\mathbf{r}_2\\| - L_0 \\cdot k_{\\text{pre}}",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.2.2_eq2",
+      "latex": "\\mathbf{F}_{\\text{spring}} = -\\operatorname{sgn}(\\text{def}) \\cdot \\min\\Bigl( k_s\\,|\\text{def}|,\\, k_{\\text{max}} \\Bigr)\\, \\mathbf{n}",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.2.2_eq3",
+      "latex": "\\mathbf{F}_{\\text{damping}} = - k_d \\Bigl( (\\mathbf{v}_1 - \\mathbf{v}_2) \\cdot \\mathbf{n} \\Bigr)\\, \\mathbf{n}",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.3_eq1",
+      "latex": "\\mathbf{F}_{\\text{collision}} = - k_{\\text{col}}\\, d\\, \\mathbf{n}",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.3_eq2",
+      "latex": "\\mathbf{F}_{\\text{adjusted}} = \\mathbf{F} - \\Bigl(\\mathbf{F} \\cdot \\mathbf{n}\\Bigr)\\,\\mathbf{n}",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.5_eq1",
+      "latex": "\\mathbf{F}_{\\text{final}} = \\begin{cases} \\mathbf{0}, & \\text{if } \\|\\mathbf{F}\\| < \\mu \\bigl|\\mathbf{F} \\cdot \\mathbf{n}\\bigr| \\\\ \\mathbf{F} - \\mu \\bigl|\\mathbf{F} \\cdot \\mathbf{n}\\bigr| \\frac{\\mathbf{F}}{\\|\\mathbf{F}\\|}, & \\text{otherwise} \\end{cases}",
+      "auto_align": true
+    },
+    {
+      "id": "3.2.11_eq1",
+      "latex": "E = \\sum_{i=1}^{N} \\|\\mathbf{r}_i^{\\text{sim}} - \\mathbf{r}_i^{\\text{exp}}\\|^2",
+      "auto_align": true
+    }
+  ]
+}
