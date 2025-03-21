@@ -203,7 +203,7 @@ Each item (equation or pseudocode) can be:
 
 ## License
 
-MIT License
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
 ## Acknowledgments
 
